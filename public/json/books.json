@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Enough HTML to Be Dangerous: An introduction to HTML",
+    "author": "Michael Hartl",
+    "description": "This concise book aims to provide readers with the foundational knowledge needed to create and structure web content using HTML. Through practical examples and explanations, it covers the essentials of HTML markup, tags, attributes, and basic web page structure. The playful title reflects its approach of empowering readers with enough knowledge to start building web pages, without overwhelming them with excessive technical details. This resource serves as a stepping stone for individuals who want to dive into web development and gain a solid grasp of HTML's role in creating web content.",
+    "category": "HTML",
+    "price": 199,
+    "image": "/images/1.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "New Perspectives on HTML, CSS, and Dynamic HTML",
+    "author": "Patrick M. Carey",
+    "description": "Covering a wide spectrum of topics, this extensive book provides insights into HTML, CSS, and dynamic HTML techniques. It explores the fundamentals of creating web content, styling web pages, and adding interactive elements using dynamic HTML. With its in-depth explanations and practical examples, the book caters to learners at different levels, from beginners to more experienced developers looking to expand their skills. Whether you're looking to build a strong foundation in web development or delve into more advanced concepts, this resource offers valuable perspectives on essential technologies for crafting modern and interactive websites..",
+    "category": "HTML",
+    "price": 350,
+    "image": "/images/2.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Beginning HTML and CSS",
+    "author": "Rob Larsen",
+    "description": "This book serves as an entry point into creating and styling web pages. It covers foundational concepts such as HTML tags, attributes, CSS selectors, styling properties, and responsive design. Through practical examples and step-by-step explanations, readers can grasp the fundamentals of structuring web content and applying styles to achieve visually appealing and user-friendly websites. With its approachable style and emphasis on hands-on learning, the book is a valuable tool for those looking to start their journey in web development and acquire a strong understanding of HTML and CSS.",
+    "category": "HTML",
+    "price": 290,
+    "image": "/images/3.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Creating Cool Web Sites with HTML, XHTML, and CSS",
+    "author": "Dave Taylor",
+    "description": "create visually appealing and functional websites using HTML, XHTML, and CSS. The book still offers foundational knowledge on building web pages and styling them with CSS. It covers topics such as creating layouts, using different types of media, and incorporating interactivity. Readers can expect to gain insights into crafting websites that are both aesthetically pleasing and user-friendly. Although some of the content might not cover the latest web development trends and technologies, the book can serve as a historical reference for those interested in understanding how web development evolved in its earlier stages.",
+    "category": "HTML",
+    "price": 450,
+    "image": "/images/4.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "HTML: the complete reference",
+    "author": "Thomas A. Powell",
+    "description": "This book provides an in-depth exploration of HTML's elements, attributes, and syntax, as it existed at the time of its publication. While it may not cover modern HTML5 features and advancements, it offers valuable historical insights into the early days of web development. Topics covered include structuring web content, creating hyperlinks, working with images, and more. It's worth noting that the information provided in the book might be outdated in terms of contemporary web development practices, but it can be useful for understanding the foundation of HTML and the historical context of web technologies.",
+    "category": "HTML",
+    "price": 640,
+    "image": "/images/5.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "CSS Web Design For Dummies",
+    "author": "Richard Mansfield",
+    "description": "This guide focuses on Cascading Style Sheets (CSS), a technology used to control the visual presentation of web pages. The book provides an introduction to CSS and how it can be utilized to enhance the design and layout of websites. While the specific techniques and practices mentioned in the book might not reflect the current state of web design, the fundamentals of CSS and its role in creating visually appealing and consistent web pages remain relevant. This resource could be helpful for those interested in understanding the basics of CSS and its historical significance in shaping the visual aspects of websites.",
+    "category": "HTML",
+    "price": 640,
+    "image": "/images/6.jpeg"
+  },
+  {
+    "id": 7,
+    "title": "JavaScript For Beginners",
+    "author": "Stephen Blumenthal",
+    "description": "A concise guide designed to facilitate quick and efficient learning of JavaScript programming. With a focus on learning in half the time, this book covers fundamental concepts of the language, coding techniques, programming practices, and web page development. It offers a practical approach for beginners, helping them understand JavaScript's role in web development. Despite its brevity, the book aims to equip readers with essential knowledge required to start working with JavaScript effectively, making it a useful resource for individuals looking to kickstart their programming journey",
+    "category": "JavaScript",
+    "price": 50,
+    "image": "/images/7.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "JavaScript and JQuery: Interactive Front-End Web Development",
+    "author": "Jon Duckett",
+    "description": "A comprehensive resource for those seeking to master front-end web development using JavaScript and jQuery. This extensive book covers interactive web design techniques and provides in-depth explanations of JavaScript and jQuery concepts. With a focus on practicality, it explores creating dynamic and engaging web content. The book is accompanied by visual examples, making it particularly helpful for visual learners. From fundamental scripting to advanced interactive features, readers can expect to gain a solid understanding of these technologies, making it a valuable reference for anyone aiming to enhance their web development skills.",
+    "category": "JavaScript",
+    "price": 650,
+    "image": "/images/8.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "Professional: JavaScript for Web Developers",
+    "author": "Nicholas C. Zakas",
+    "description": "Spanning nearly a thousand pages, this book delves into advanced JavaScript concepts, best practices, and modern development techniques. It covers topics such as DOM manipulation, event handling, asynchronous programming, and more. With a focus on writing efficient and maintainable code, the book provides insights into performance optimization and debugging strategies. Readers can expect to enhance their skills through practical examples and real-world scenarios, making this resource a valuable asset for those seeking to become proficient in JavaScript web development.",
+    "category": "JavaScript",
+    "price": 690,
+    "image": "/images/9.jpeg"
+  },
+  {
+    "id": 10,
+    "title": "Simplifying JavaScript: Writing Modern JavaScript with ES5, ES6, and Beyond",
+    "author": "Joe Morgan",
+    "description": "a practical approach to mastering JavaScript's evolving landscape. The book focuses on simplifying the process of transitioning from older ES5 to the more modern ES6 and beyond. It covers essential language features, new syntax, and programming paradigms, making it suitable for developers seeking to upgrade their skills. With concise explanations and relevant examples, the book helps bridge the gap between different JavaScript versions. Whether you're new to the language or an experienced developer, this resource can assist in understanding and effectively utilizing the capabilities of modern JavaScript, enabling you to write cleaner, more efficient code.",
+    "category": "JavaScript",
+    "price": 340,
+    "image": "/images/10.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "Functional Programming in JavaScript: How to Improve Your JavaScript Programs Using Functional Techniques",
+    "author": "Luis Atencio",
+    "description": "Spanning 274 pages, this book delves into the principles of functional programming and how they can enhance JavaScript code. It covers topics such as immutability, higher-order functions, currying, and composing functions to create more modular and maintainable programs. With practical examples and code samples, readers can learn how to leverage functional techniques to solve common programming challenges. This resource is particularly valuable for JavaScript developers looking to adopt functional programming concepts and techniques to write cleaner, more concise, and robust code.",
+    "category": "JavaScript",
+    "price": 799,
+    "image": "/images/11.jpeg"
+  },
+  {
+    "id": 12,
+    "title": "Smashing UX Design: Foundations for Designing Online User Experiences",
+    "author": "Jesmond Allen & James Chudley",
+    "description": "Guide to user experience (UX) design for online platforms. Covering a wide range of topics, this book delves into the principles and practices behind creating intuitive, user-friendly digital experiences. It offers insights into user research, information architecture, interaction design, and usability testing. With practical advice and case studies, the book helps designers understand how to craft engaging interfaces and seamless interactions that cater to user needs. Whether you're a beginner or an experienced designer, 'Smashing UX Design' provides valuable guidance for improving your design skills and creating more effective and enjoyable online experiences.",
+    "category": "UX",
+    "price": 650,
+    "image": "/images/12.jpeg"
+  },
+  {
+    "id": 13,
+    "title": "Lean UX: Applying Lean Principles to Improve User Experience",
+    "author": "Jeff Gothelf & Josh Seiden",
+    "description": "Introduces the concept of applying lean methodologies to the field of user experience design. In this concise book, the authors guide readers through the process of integrating user experience design with lean and agile development practices. It emphasizes collaboration, rapid iteration, and a focus on delivering value to users. Through practical examples and case studies, the book illustrates how to streamline the UX design process, validate assumptions, and create more efficient and user-centered products. With its emphasis on continuous improvement and adaptability, 'Lean UX' is a valuable resource for designers and teams looking to optimize their design processes and create products that better align with user needs.",
+    "category": "UX",
+    "price": 120,
+    "image": "/images/13.jpeg"
+  },
+  {
+    "id": 14,
+    "title": "UX for Developers: How to Integrate User-Centered Design Principles Into Your Day-to-Day Development Work",
+    "author": "Westley Knight",
+    "description": "a guide tailored for developers who want to incorporate user-centered design principles into their coding routines. This book bridges the gap between development and user experience, offering practical strategies for understanding user needs, designing intuitive interfaces, and enhancing the overall user experience. It emphasizes the importance of collaboration between developers and designers and provides actionable advice on implementing user-centered design practices in the development process. Through real-world examples and insights, the book aims to empower developers to create more user-friendly and effective software applications by considering user perspectives throughout the development lifecycle.",
+    "category": "UX",
+    "price": 350,
+    "image": "/images/14.jpeg"
+  },
+  {
+    "id": 15,
+    "title": "The UX Book: Process and Guidelines for Ensuring a Quality User Experience",
+    "author": "Rex Hartson & Pardha Pyla",
+    "description": "a comprehensive resource that covers the entire user experience design process. Spanning nearly a thousand pages, this book provides a detailed and structured approach to creating user-centered digital products. It covers various aspects of UX design, including user research, design principles, interaction design, usability testing, and more. The book offers practical guidelines and methodologies that can be applied to create user-friendly and engaging interfaces. With its emphasis on systematic processes and thorough explanations, 'The UX Book' is a valuable reference for UX designers, researchers, and anyone involved in creating digital experiences that prioritize user satisfaction and usability.",
+    "category": "UX",
+    "price": 430,
+    "image": "/images/15.jpeg"
+  },
+  {
+    "id": 16,
+    "title": "Bridging UX and Web Development. Better Results Through Team Integration",
+    "author": "Jack Moffett",
+    "description": "Focusing on enhancing results through effective teamwork, this book emphasizes the importance of communication and collaboration between these two crucial aspects of creating successful digital products. It covers strategies for aligning design and development goals, streamlining workflows, and ensuring a cohesive user experience. By providing insights into the challenges faced by both disciplines and offering practical solutions for overcoming them, the book helps teams work more harmoniously to create user-friendly and visually appealing web applications. This resource is valuable for anyone looking to bridge the gap between UX design and web development in order to achieve better outcomes.",
+    "category": "UX",
+    "price": 220,
+    "image": "/images/16.jpeg"
+  },
+  {
+    "id": 17,
+    "title": "CSS in Depth",
+    "author": "Keith J. Grant",
+    "description": "the book delves into the intricacies of CSS, covering topics from basic styling to more advanced techniques. It provides insights into creating responsive layouts, managing typography, working with animations, and handling complex design challenges. With practical examples and detailed explanations, the book aims to help readers gain a deeper understanding of how CSS works and how to use it effectively to create modern and visually appealing web designs. 'CSS in Depth' is suitable for both beginners looking to grasp the fundamentals and experienced developers seeking to expand their CSS expertise to create more sophisticated web designs.",
+    "category": "CSS",
+    "price": 710,
+    "image": "/images/17.jpeg"
+  },
+  {
+    "id": 18,
+    "title": "CSS: The Definitive Guide: Visual Presentation for the Web",
+    "author": "Eric A. Meyer & Estelle Weyl",
+    "description": "An authoritative resource that covers the intricacies of Cascading Style Sheets (CSS) for web design. With over a thousand pages, this book offers a comprehensive exploration of CSS, encompassing both fundamental and advanced concepts. It delves into topics such as selectors, box models, layout techniques, typography, animations, and more. The book provides readers with a thorough understanding of how to control the visual presentation of web content. With its extensive explanations and practical examples, it serves as a valuable reference for both beginners and experienced web designers looking to create sophisticated and visually compelling websites. The 2017 edition ensures that the content is aligned with contemporary web standards and practices.",
+    "category": "CSS",
+    "price": 580,
+    "image": "/images/18.jpeg"
+  },
+  {
+    "id": 19,
+    "title": "Flexbox in CSS",
+    "author": "Estelle Weyl",
+    "description": "The book is dedicated to explaining the intricacies of Flexbox, a powerful CSS layout system designed to simplify the creation of complex layouts with ease. The book explores how Flexbox works, its properties, and how to use it to design responsive and flexible web layouts. With practical examples and clear explanations, readers can gain a solid understanding of how to implement Flexbox effectively in their web projects. This resource is particularly beneficial for web designers and developers seeking to harness the capabilities of Flexbox to create modern and adaptable web layouts.",
+    "category": "CSS",
+    "price": 220,
+    "image": "/images/19.jpeg"
+  },
+  {
+    "id": 20,
+    "title": "CSS: The Missing Manual",
+    "author": "David Sawyer McFarland",
+    "description": "This book, published in 2015, aims to fill in the gaps and provide a comprehensive understanding of CSS for web designers and developers. With nearly a thousand pages, the book covers a wide range of topics, from the basics of styling web content to more advanced techniques like responsive design, animations, and layout strategies. It includes practical examples, step-by-step instructions, and troubleshooting tips to help readers create visually appealing and well-structured websites. Whether you're a beginner looking to learn CSS from the ground up or an experienced developer seeking to deepen your knowledge, 'CSS: The Missing Manual' offers a thorough resource to enhance your CSS skills and expertise.",
+    "category": "CSS",
+    "price": 390,
+    "image": "/images/20.jpeg"
+  }
+]

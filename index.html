@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Development Book Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <main class="container my-4">
+    <div class="row mb-3">
+      <div class="col-md-4 filters"></div>
+      <div class="col-md-4 sortingOptions"></div>
+      <div class="col-md-4 text-right">
+        <button class="btn btn-info" id="cartToggleBtn">Toggle Cart</button>
+      </div>
+    </div>
+    <div class="row bookList"></div>
+    <div class="row bookDetail"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="shoppingCart d-none">
+          <h3>Shopping Cart</h3>
+          <ul class="list-group cartItems"></ul>
+          <div class="totalSum text-right mt-3">
+            <strong>Total: <span class="cartTotal">0.00 kr</span></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
