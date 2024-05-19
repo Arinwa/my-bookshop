@@ -19,21 +19,12 @@ body {
   padding: 0;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--padding);
-}
-
 .filters,
 .sortingOptions {
   color: var(--secondary-text-color);
   background-color: var(--primary-bg-color);
   padding: var(--padding);
   border-radius: var(--border-radius);
-  margin-bottom: var(--margin);
-  display: flex;
-  flex-direction: column;
 }
 
 .filters label,
@@ -61,15 +52,21 @@ main {
 .bookList {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--margin);
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--secondary-bg-color);
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
   overflow: hidden;
   transition: transform 0.3s;
+  height: 100%;
+  width: 100%;
+  min-height: 450px;
+  /* Adjust based on content size */
 }
 
 .card:hover {
@@ -77,12 +74,18 @@ main {
 }
 
 .card-img-top {
-  max-height: 200px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
+  /* Ensures the image is contained within the given height and width */
+  width: 100%;
 }
 
 .card-body {
   padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .card-title {
@@ -92,6 +95,7 @@ main {
 
 .card-text {
   margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .btn {

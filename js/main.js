@@ -17,10 +17,6 @@ async function start() {
   addFilters();
   addSortingOptions();
   displayBooks();
-
-  document.getElementById('cartToggleBtn').addEventListener('click', () => {
-    document.querySelector('.shoppingCart').classList.toggle('d-none');
-  });
 }
 
 function sortBooks(books, sortBy) {
@@ -127,15 +123,17 @@ function displayBooks() {
   sortBooks(filteredBooks, chosenSortOption);
 
   const bookCards = filteredBooks.map(book => /*html*/`
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
+    <div class="col-md-4 mb-4 d-flex align-items-stretch">
+      <div class="card">
         <img src="${book.image}" class="card-img-top" alt="${book.title}">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">${book.title}</h5>
           <p class="card-text">${book.author}</p>
-          <p class="card-text">${book.price.toFixed(2)}kr</p>
-          <button class="btn btn-primary btn-detail" data-id="${book.id}">Details</button>
-          <button class="btn btn-success btn-buy" data-id="${book.id}">Buy</button>
+          <p class="card-text mt-auto">$${book.price.toFixed(2)}</p>
+          <div class="d-flex justify-content-between mt-3">
+            <button class="btn btn-primary btn-detail" data-id="${book.id}">Details</button>
+            <button class="btn btn-success btn-buy" data-id="${book.id}">Buy</button>
+          </div>
         </div>
       </div>
     </div>
@@ -168,8 +166,10 @@ function showBookDetail(bookId) {
         <p class="card-text">${book.author}</p>
         <p class="card-text">$${book.price.toFixed(2)}</p>
         <p class="card-text">${book.description}</p>
-        <button class="btn btn-success btn-buy" data-id="${book.id}">Buy</button>
-        <button class="btn btn-secondary btn-back">Back</button>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-success btn-buy" data-id="${book.id}">Buy</button>
+          <button class="btn btn-secondary btn-back">Back</button>
+        </div>
       </div>
     </div>
   `;
@@ -183,6 +183,10 @@ function showBookDetail(bookId) {
     addToCart(bookId);
   });
 }
+
+document.getElementById('cartToggleBtn').addEventListener('click', () => {
+  document.querySelector('.shoppingCart').classList.toggle('d-none');
+});
 
 function addToCart(bookId) {
   // Implement cart functionality here
