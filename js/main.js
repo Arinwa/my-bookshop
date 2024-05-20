@@ -8,7 +8,8 @@ let books,
   chosenPriceMaxFilter,
   chosenSortOption = 'titleAscending',
   categories = [],
-  authors = [];
+  authors = [],
+  cart = [];
 
 async function start() {
   books = await getJSON('/json/books.json');
@@ -123,7 +124,7 @@ function displayBooks() {
   sortBooks(filteredBooks, chosenSortOption);
 
   const bookCards = filteredBooks.map(book => /*html*/`
-    <div class="col-md-4 mb-4 d-flex align-items-stretch">
+    <div class="col-md-3 mb-4 d-flex align-items-stretch">
       <div class="card">
         <img src="${book.image}" class="card-img-top" alt="${book.title}">
         <div class="card-body d-flex flex-column">
@@ -141,9 +142,11 @@ function displayBooks() {
 
   document.querySelector('.bookList').innerHTML = bookCards.join('');
 
+  // Attach event listeners after rendering the books
   document.querySelectorAll('.btn-detail').forEach(button => {
     button.addEventListener('click', event => {
       const bookId = event.target.getAttribute('data-id');
+      console.log(`Detail button clicked for book ID: ${bookId}`);
       showBookDetail(bookId);
     });
   });
@@ -151,6 +154,7 @@ function displayBooks() {
   document.querySelectorAll('.btn-buy').forEach(button => {
     button.addEventListener('click', event => {
       const bookId = event.target.getAttribute('data-id');
+      console.log(`Buy button clicked for book ID: ${bookId}`);
       addToCart(bookId);
     });
   });
@@ -158,6 +162,10 @@ function displayBooks() {
 
 function showBookDetail(bookId) {
   const book = books.find(b => b.id === bookId);
+  if (!book) return;
+
+  console.log(`Showing details for book ID: ${bookId}`);
+
   document.querySelector('.bookDetail').innerHTML = /*html*/`
     <div class="card mb-4 shadow-sm">
       <img src="${book.image}" class="card-img-top" alt="${book.title}">
@@ -175,22 +183,53 @@ function showBookDetail(bookId) {
   `;
 
   document.querySelector('.btn-back').addEventListener('click', () => {
+    console.log('Back button clicked');
     document.querySelector('.bookDetail').innerHTML = '';
   });
 
   document.querySelector('.btn-buy').addEventListener('click', event => {
     const bookId = event.target.getAttribute('data-id');
+    console.log(`Buy button clicked from details for book ID: ${bookId}`);
     addToCart(bookId);
   });
 }
 
 document.getElementById('cartToggleBtn').addEventListener('click', () => {
+  console.log('Toggle cart button clicked');
   document.querySelector('.shoppingCart').classList.toggle('d-none');
 });
 
 function addToCart(bookId) {
-  // Implement cart functionality here
-  console.log('Add to cart:', bookId);
+  const book = books.find(b => b.id === bookId);
+  if (!book) return;
+
+  console.log(`Adding book ID: ${bookId} to cart`);
+
+  const cartItem = cart.find(item => item.book.id === bookId);
+  if (cartItem) {
+    cartItem.quantity++;
+  } else {
+    cart.push({ book, quantity: 1 });
+  }
+  updateCart();
+}
+
+function updateCart() {
+  const cartContent = cart.map(item => /*html*/`
+    <div class="cart-item">
+      <span class="cart-item-title">${item.book.title}</span>
+      <span class="cart-item-quantity">${item.quantity}</span>
+      <span class="cart-item-price">$${item.book.price.toFixed(2)}</span>
+      <span class="cart-item-total">$${(item.book.price * item.quantity).toFixed(2)}</span>
+    </div>
+  `).join('');
+
+  const totalSum = cart.reduce((sum, item) => sum + item.book.price * item.quantity, 0).toFixed(2);
+
+  document.querySelector('.shoppingCart').innerHTML = /*html*/`
+    ${cartContent}
+    <div class="cart-total">Total: $${totalSum}</div>
+  `;
 }
 
 start();

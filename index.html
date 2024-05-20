@@ -10,15 +10,42 @@
 </head>
 
 <body>
+  <header class="fixed-header">
+    <h2>Frontend Book Store</h2>
+    <div class="header-center">
+      <div class="dropdown filter-dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Filter
+        </button>
+        <div class="dropdown-menu" aria-labelledby="filterDropdown">
+          <div class="filters"></div>
+        </div>
+      </div>
+      <div class="dropdown sort-dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="sortDropdown" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Sort
+        </button>
+        <div class="dropdown-menu" aria-labelledby="sortDropdown">
+          <div class="sortingOptions"></div>
+        </div>
+      </div>
+    </div>
+    <button id="cartToggleBtn" class="btn btn-info">Toggle Cart</button>
+  </header>
   <main class="container mt-4">
-    <div class="filters mb-4"></div>
-    <div class="sortingOptions mb-4"></div>
     <div class="row bookList"></div>
     <div class="bookDetail mt-4"></div>
-    <button id="cartToggleBtn" class="btn btn-info mt-4">Toggle Cart</button>
     <div class="shoppingCart mt-4 d-none"></div>
   </main>
+  <footer class="fixed-footer">
+    &copy; 2024 Frontend Book Store. All rights reserved.
+  </footer>
   <script type="module" src="/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
