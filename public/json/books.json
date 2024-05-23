@@ -37,12 +37,12 @@
   },
   {
     "id": 5,
-    "title": "HTML: the complete reference",
-    "author": "Thomas A. Powell",
-    "description": "This book provides an in-depth exploration of HTML's elements, attributes, and syntax, as it existed at the time of its publication. While it may not cover modern HTML5 features and advancements, it offers valuable historical insights into the early days of web development. Topics covered include structuring web content, creating hyperlinks, working with images, and more. It's worth noting that the information provided in the book might be outdated in terms of contemporary web development practices, but it can be useful for understanding the foundation of HTML and the historical context of web technologies.",
-    "category": "HTML",
+    "title": "Modern CSS",
+    "author": "Joe Attardi",
+    "description": "Embark on a journey through contemporary CSS practices as of 2020. This book, rich with practical examples, elucidates concepts through code snippets, visual aids, and diagrams for enhanced comprehension. Commence with foundational CSS principles: the box model, color manipulation, selectors and combinators, and specificity. Progress steadily to intermediate topics encompassing text styling, positioning, Z-index and stacking contexts, gradients, and borders. Explore advanced subjects including transforms, transitions, animations, flexbox, and CSS grid. While certain features are exclusive to modern browsers like Chrome, Edge, Safari, and Firefox, compatibility notes for IE11 are provided whenever applicable.",
+    "category": "CSS",
     "price": 640,
-    "image": "/images/5.jpeg"
+    "image": "/images/5.jpg"
   },
   {
     "id": 6,

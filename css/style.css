@@ -13,6 +13,10 @@
   --margin: 20px;
 }
 
+main .row:first-of-type {
+  margin-top: 80px;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -38,20 +42,13 @@ header.fixed-header h2 {
   margin: 0;
 }
 
-.header-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-
-.header-center .dropdown {
-  margin-right: 10px;
-}
-
 .filters,
 .sortingOptions {
   padding: 10px;
+  background-color: var(--secondary-bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  margin-bottom: var(--margin);
 }
 
 .filters label,
@@ -59,6 +56,7 @@ header.fixed-header h2 {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  color: var(--primary-text-color);
 }
 
 .filters label span,
@@ -66,6 +64,7 @@ header.fixed-header h2 {
   display: inline-block;
   width: 150px;
   font-weight: bold;
+  color: var(--primary-text-color);
 }
 
 .filters select,
@@ -80,7 +79,7 @@ header.fixed-header h2 {
 .bookList {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 120px;
+  margin-top: 20px;
   /* Adjust margin to account for fixed header */
 }
 
@@ -160,8 +159,16 @@ header.fixed-header h2 {
   background-color: #545b62;
 }
 
+.btn-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
 .shoppingCart {
-  display: none;
   background-color: var(--secondary-bg-color);
   padding: var(--padding);
   border-radius: var(--border-radius);
@@ -171,6 +178,10 @@ header.fixed-header h2 {
   top: var(--margin);
   max-width: 300px;
   z-index: 1000;
+}
+
+.shoppingCart.d-none {
+  display: none;
 }
 
 .shoppingCart .cart-item {
@@ -195,6 +206,10 @@ header.fixed-header h2 {
   margin-left: 10px;
 }
 
+.shoppingCart .cart-item-total {
+  margin-left: 10px;
+}
+
 .shoppingCart .cart-total {
   border-top: 1px solid #cccccc;
   padding-top: 10px;
@@ -208,7 +223,7 @@ footer.fixed-footer {
   color: var(--secondary-text-color);
   padding: 10px;
   width: 100%;
-  position: fixed;
+  flex-shrink: 0;
   bottom: 0;
   left: 0;
   text-align: center;
