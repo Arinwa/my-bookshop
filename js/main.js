@@ -142,7 +142,7 @@ function displayBooks() {
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">${book.title}</h5>
           <p class="card-text">${book.author}</p>
-          <p class="card-text mt-auto">$${book.price.toFixed(2)}</p>
+          <p class="card-text mt-auto">${book.price.toFixed(2)} SEK</p>
           <div class="d-flex justify-content-between mt-3">
             <button class="btn btn-primary btn-detail" data-id="${book.id}">Details</button>
             <button class="btn btn-success btn-buy" data-id="${book.id}">Buy</button>
@@ -247,14 +247,14 @@ function updateCartUI() {
   const cartItemsHTML = cart.map(item => /*html*/`
     <div class="d-flex justify-content-between">
       <span>${item.book.title} (x${item.quantity})</span>
-      <span>$${(item.book.price * item.quantity).toFixed(2)}</span>
+      <span>${(item.book.price * item.quantity).toFixed(2)} SEK</span>
     </div>
   `).join('');
 
   cartItemsContainer.innerHTML = cartItemsHTML;
 
   const cartTotal = cart.reduce((total, item) => total + item.book.price * item.quantity, 0);
-  document.querySelector('.cart-total').textContent = `Total: $${cartTotal.toFixed(2)}`;
+  document.querySelector('.cart-total').textContent = `Total: ${cartTotal.toFixed(2)} SEK`;
 }
 
 
